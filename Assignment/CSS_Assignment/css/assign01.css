@@ -1,0 +1,11 @@
+table{
+    border: 1px solid #ddd;
+}
+
+#header{
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: greenyellow;
+}

@@ -1,0 +1,74 @@
+@import "mixins/button-mixin";
+
+
+$margin: 7px;;
+$width: 600px;
+$height:200px;
+$size: 20px;
+
+
+@mixin my-container($color){
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blueviolet;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    font-size: $size;
+    color: white;
+}
+
+@mixin my-left($background-color){
+    width: $width - 200;
+    height: $height - 65;
+    background-color: $background-color;
+    margin-left: $margin;
+    margin-top: $margin;
+    padding: 25px 25px;
+}
+
+@mixin my-right($background-color){
+    width: $width - 400;
+    height: $height - 65;
+    background-color: $background-color;
+    margin: $margin;
+    padding: 25px 25px;
+}
+
+.theme-1{
+    .container {
+        @include my-container(khaki);
+    }
+    .left {
+        @include my-left(darkcyan);
+    }
+    .right {
+        @include my-right(cadetblue);
+    }
+    .button {
+        @include myTheme(darksalmon);
+    }
+}
+
+.theme-2{
+    .container {
+        @include my-container(pink);
+    }
+    .left {
+        @include my-left(palevioletred);
+    }
+    .right {
+        @include my-right(lightcoral);
+    }
+    .button {
+        @include myTheme(#654321);
+    }
+}
+   
+
+
+
+
+
+
+   

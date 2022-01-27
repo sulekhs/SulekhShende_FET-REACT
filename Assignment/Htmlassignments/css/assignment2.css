@@ -1,0 +1,10 @@
+.colorChange{
+    width: 50%;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+p{
+    font-size: 25px;
+    margin: 5px;
+}

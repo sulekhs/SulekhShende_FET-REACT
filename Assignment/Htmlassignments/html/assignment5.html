@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      /* body {
+        margin: 0px;
+        padding: 0px;
+      } */
+    </style>
+  </head>
+  <body onload="">
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <script>
+      var face = document.getElementById('myCanvas');
+      var ctx = face.getContext('2d');
+    //void ctx.arc(x, y, radius, startAngle, endAngle [, anticlockwise]);
+	  //true, causes the arc to be drawn counter-clockwise between the two angles. By default it is drawn clockwise.
+	  
+      ctx.beginPath();
+      ctx.fillStyle = 'yellow';
+      ctx.arc(75, 75, 50, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+	  
+	  
+	    ctx.beginPath();
+      ctx.moveTo(55, 50);
+      ctx.fillStyle = 'blue';
+      ctx.arc(50, 50, 4, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.moveTo(103, 49);
+	  
+	  
+	    ctx.beginPath();
+      ctx.fillStyle = 'blue';
+      ctx.arc(100, 50, 4, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+	  
+	  //Semi-Circle//
+      ctx.moveTo(105, 75);
+	    ctx.beginPath();
+      ctx.strokeStyle = 'blue';
+      ctx.arc(75, 75, 30, 0, Math.PI, false);
+      ctx.closePath();
+      ctx.stroke();
+	  
+	  
+	  
+    </script>
+  </body>
+</html> 

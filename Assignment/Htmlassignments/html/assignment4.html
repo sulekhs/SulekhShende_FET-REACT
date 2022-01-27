@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebWorker</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script>
+            function bigLoop() {
+                if(Modernizr.webworkers) {
+                    var worker = new Worker('../js/assignment4.js');
+                    worker.onmessage = function (event) {
+                        alert("completed " + event.data + " iterations");
+                    };
+                } else {
+                    alert("your browser doesn't ssupport web worker");
+                }
+            }
+
+            function sayHello() {
+                alert("Welcome to Cybage");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="bigLoop();" value="big loop"/>
+        <input type="button" onclick="sayHello();" value="say hello"/>
+    </body>
+</html>

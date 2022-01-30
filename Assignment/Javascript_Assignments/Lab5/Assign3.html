@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add Paragraph Text</title>
+    </head>
+    <body>
+          <div id="div1">
+              <p id="p1">This is a paragraph.</p>
+              <p id="p2">This is another paragraph.</p>
+              <p id="add"></p>
+          </div>
+          <input type="button" value="Add Para" onClick="addText()">
+            <script type="text/javascript">
+                function addText() {
+                    document.getElementById("add").innerHTML = "This is new.";
+                }
+            </script>
+    </body>
+</html>

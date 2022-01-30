@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Location and History Objects</title>
+    </head>
+    <body>
+        <header><b>Location Object Properties</b></header>
+        <table border="1px solid">
+            <tr>
+                <td><b>HREF</b></td>
+                <td id="url"></td>
+            </tr>
+            <tr>
+                <td><b>Path Name</b></td>
+                <td id="pathname"></td>
+            </tr>
+            <tr>
+                <td><b>Protocol</b></td>
+                <td id="protocol"></td>
+            </tr>
+        </table>
+        <br>
+        <p>Click <a href='./Register.html'>Here</a> To Register</p>
+        <script type="text/javascript">
+                document.getElementById("url").innerHTML = window.location.href;
+                document.getElementById("pathname").innerHTML = window.location.pathname;
+                document.getElementById("protocol").innerHTML = window.location.protocol;
+        </script>
+    </body>
+</html>

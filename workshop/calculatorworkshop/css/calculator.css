@@ -1,0 +1,56 @@
+.container{
+    width: 70%;
+    height: 70%;
+}
+
+.title{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+    width: 210px;
+    height: 50px;
+    color:skyblue;
+    border: solid black 1px;
+}
+
+.tableContainer{
+    width: 250px;
+}
+
+#scientificCalc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#calculate{
+    height: 40px;
+}
+
+input[type="button"]
+{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border-color: skyblue;
+    /* border-color:#ff4456 ; */
+    width:100%;
+}
+
+input[type="text"]
+{
+    border-radius: 10px;
+    text-align: right;
+    background-color:skyblue;
+    border-color: black ;
+    width:100%;
+}
+
+#science{
+    width: 145px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: solid black 1px;
+}

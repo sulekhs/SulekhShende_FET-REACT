@@ -1,0 +1,225 @@
+.theme-mob .wrapper {
+  width: 100%;
+}
+
+.theme-mob .portal {
+  width: 100%;
+  height: 100px;
+  background-color: #7B63C5;
+  padding-top: 2rem;
+}
+
+.theme-mob .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+  height: 10px;
+  color: blueviolet;
+  background-color: lightgreen;
+  border: 2px solid paleturquoise;
+}
+
+.theme-mob .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 2fr 4fr;
+      grid-template-columns: 2fr 4fr 2fr 4fr;
+  display: grid;
+  gap: 20px 20px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: wheat;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  height: 400px;
+}
+
+.theme-mob .aboutme {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.theme-mob .aboutme img {
+  height: 100px;
+}
+
+.theme-mob .title {
+  color: black;
+}
+
+.theme-mob .title img {
+  height: 100px;
+}
+
+.theme-mob .title article {
+  color: black;
+}
+
+.theme-mob .links {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+  .theme-mob .links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.theme-mob .four {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.theme-mob .four img {
+  height: 100px;
+}
+
+.theme-mob .four article {
+  color: black;
+}
+
+.theme-mob .my-footer {
+  width: 100%;
+  height: 40px;
+  background-color: #A894E5;
+}
+
+.theme-desktop .wrapper {
+  width: 100%;
+}
+
+.theme-desktop .portal {
+  width: 100%;
+  height: 100px;
+  background-color: #7B63C5;
+  padding-top: 2rem;
+}
+
+.theme-desktop .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+  height: 10px;
+  color: blueviolet;
+  background-color: lightgreen;
+  border: 2px solid paleturquoise;
+}
+
+.theme-desktop .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 2fr 4fr;
+      grid-template-columns: 2fr 4fr 2fr 4fr;
+  display: grid;
+  gap: 20px 20px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: wheat;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  height: 400px;
+}
+
+.theme-desktop .aboutme {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.theme-desktop .aboutme img {
+  height: 100px;
+}
+
+.theme-desktop .title {
+  color: black;
+}
+
+.theme-desktop .title img {
+  height: 100px;
+}
+
+.theme-desktop .title article {
+  color: black;
+}
+
+.theme-desktop .links {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+  .theme-desktop .links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.theme-desktop .four {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.theme-desktop .four img {
+  height: 100px;
+}
+
+.theme-desktop .four article {
+  color: black;
+}
+
+.theme-desktop .my-footer {
+  width: 100%;
+  height: 40px;
+  background-color: #A894E5;
+}

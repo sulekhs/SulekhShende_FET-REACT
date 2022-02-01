@@ -1,0 +1,78 @@
+@import "mixins/_theme-mixin.scss";
+@import "mixins/_desktop-mixin.scss";
+
+.theme-mob{
+    .wrapper{
+        @include mywrapper();
+    }
+
+    .portal{
+        @include myPortal(#7B63C5);
+    }
+
+    .header{
+        @include my-header(lightgreen);
+    }
+
+    .container{
+        @include my-container(white);
+    }
+
+    .aboutme{
+        @include my-aboutme();
+    }
+
+    .title{
+        @include my-titlehead(black);
+    }
+
+    .links{
+        @include my-links(red);
+    }
+
+    .four{
+        @include myfour(black);
+    }
+
+    .my-footer{
+        @include myfooter(#A894E5);
+    }
+}
+
+.theme-desktop{
+    .wrapper{
+        @include mywrapper();
+    }
+
+    .portal{
+        @include myPortal(#7B63C5);
+    }
+
+    .header{
+        @include my-header(lightgreen);
+    }
+
+    .container{
+        @include my-container(white);
+    }
+
+    .aboutme{
+        @include my-aboutme();
+    }
+
+    .title{
+        @include my-titlehead(black);
+    }
+
+    .links{
+        @include my-links(red);
+    }
+
+    .four{
+        @include myfour(black);
+    }
+
+    .my-footer{
+        @include myfooter(#A894E5);
+    }
+}

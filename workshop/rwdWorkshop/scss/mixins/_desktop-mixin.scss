@@ -1,0 +1,87 @@
+$value: 10px;
+$width: 100%;
+
+@mixin mywrapper(){
+    width: $width;
+}
+
+@mixin myPortal($background-color){
+    width: $width;
+    height: 100px;
+    background-color: $background-color;
+    padding-top: 2rem;
+}
+
+@mixin my-header($background-color){
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    height: $value;
+    color: blueviolet;
+    background-color: $background-color;
+    border: 2px solid paleturquoise;
+}
+
+@mixin my-container($color){
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr 4fr;
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: wheat;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem; 
+    height: $value * 40;
+}
+        
+@mixin my-aboutme(){
+    grid-row: 1;
+    img{
+        height: 100px;
+    }
+}
+
+@mixin my-titlehead($color){
+   color: $color;
+   img{
+       height: 100px;
+   }
+    article{
+        color: $color;
+    }
+}
+
+@mixin my-links($color){
+    grid-row: 2/3;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: 768px){
+        a{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@mixin myfour($color){
+    grid-column: 2/2;
+    
+    img{
+       height: 100px;
+   }
+    article{
+        color: $color;
+    } 
+}
+
+@mixin myfooter($background-color){
+  width: $width;
+  height: $value * 4;
+  background-color: $background-color;
+}
+

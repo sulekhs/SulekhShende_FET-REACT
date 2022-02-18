@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script src="../js/operations.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Welcome to Novelty Bookstore!
+        </header>
+        <div id="navbar"> 
+            <div id="name">Novelty BookStore</div> 
+            <div class="searchbar">
+                <input type="text" placeholder="Search Books, Magazines..."/> 
+            </div>
+        </div>
+        <div class="mid-part">
+            <div id="links">
+            <br/>
+            <br/>    
+                <button type="button" onclick="addBook()">Add Book</button><br/><br/>
+                <button type="button" onclick="modifyBook()">Modify Book</button><br/><br/>
+                <button type="button" onclick="removeBook()">Remove Book</button><br/><br/>
+                <button type="button" onclick="bookList()">List Book</button>
+            </div>
+            <div id="render">
+                
+            </div>
+            <div id="img">
+               <aside>
+                    <br/>
+                    This is a very simple book inventory demo application with no security(Authentication,Permissions,Session).
+                    Its like a virtual book store where a user can view,list,add,edit and delete books,
+                    It can also process simple order for one or more books. and in the end show a basic report of sold and unsold books.
+               </aside>  
+            </div>
+        </div>
+        <footer>
+            <div class="copyrt">@copyright by Novelty.com
+            </div>
+        </footer>
+    </div>
+ </body>
+</html>

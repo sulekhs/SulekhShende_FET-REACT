@@ -1,0 +1,95 @@
+.container{
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    height: 40px;
+    margin: 5px;
+    background-color: skyblue;
+    font-size: 25px;
+    color: yellowgreen;
+    text-shadow: 2px 2px rgb(174, 0, 255);
+}
+
+#name{
+    color: gold;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+#navbar{
+    height: 70px;
+    /* width: 100%; */
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.searchbar{
+    margin-top: 25px;
+}
+
+.mid-part{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    height: 400px;
+}
+
+#links{
+    flex-direction: column;
+    flex: 1;
+    background-color: springgreen;
+ }
+
+#render{
+    flex-direction: column;
+    flex: 5;
+    background-image: url("../pictures/book1.jpg");
+    /* opacity: 0.2; */
+}
+
+#img{
+    flex-direction: column;
+    flex: 2;
+    background-image: url("../pictures/ad.jpg");
+    color: red;
+}
+
+footer{
+    background-color: tan;
+    width: 100%;
+    height: 40px;
+}
+
+.form-group{
+    color: yellow;
+    font-size: 25px;
+}
+
+.copyrt{
+    margin: 3px;
+}
+
+#bookId{
+    color: yellow;
+    font-size: 25px;
+}
+
+#btn-rem{
+    background-color: red;
+    font-size: 25px;
+}
+
+#btn-add{
+    background-color: green;
+    font-size: 25px;
+}
+
+#modify{
+    margin-top: 25px;
+    color: yellow;
+    font-size: 25px;
+}
